@@ -266,7 +266,7 @@ section img {
     display: grid;
 
     grid-template-columns:
-        repeat(2, 1fr);
+    repeat(3, 1fr);
 
     gap: 25px;
 
@@ -285,7 +285,8 @@ section img {
 }
 
 .review p {
-    font-style: italic;
+    font-style: normal;
+    line-height: 1.6;
 }
 
 
