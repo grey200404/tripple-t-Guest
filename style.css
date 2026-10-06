@@ -51,6 +51,31 @@ nav a {
 nav a:hover {
     color: #9a6b3f;
 }
+/* Navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Hide hamburger button on computers */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+.nav-links a.active {
+    color: #c88a32;
+}
 
 
 /* =========================
@@ -438,6 +463,42 @@ footer {
     background: white;
     color: #333;
 }
+
+/* 404 Page */
+.error-page {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.error-page h1 {
+    font-size: 100px;
+    color: #c88a32;
+    margin: 0;
+    line-height: 1;
+}
+
+.error-page h2 {
+    font-size: 32px;
+    margin: 15px 0;
+    color: #3b2a22;
+}
+
+.error-page p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Keyboard accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #c88a32;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
 /* =========================
    MOBILE PHONE
 ========================= */
@@ -462,6 +523,30 @@ footer {
     nav a {
         font-size: 15px;
     }
+    .menu-toggle {
+    display: block;
+    margin-left: auto;
+}
+
+.nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 10px 0;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
 
 
     /* Homepage Hero */
@@ -568,5 +653,10 @@ footer {
     gap: 25px;
     text-align: center;
 }
+.menu-toggle {
+    display: block;
+    margin-left: auto;
+}
+
 
 }

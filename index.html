@@ -6,11 +6,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Triple T Executive Lodge | Guest House in Kasumbalesa, Zambia</title>
+    <title>Tripple T Executive Lodge | Guest House in Kasumbalesa, Zambia</title>
 
     <meta
         name="description"
-        content="Triple T Executive Lodge offers comfortable and affordable accommodation in Kasumbalesa, Zambia. View our rooms, photos, location and contact information."
+        content="Tripple T Executive Lodge offers comfortable and affordable accommodation in Kasumbalesa, Zambia. View our rooms, photos, location and contact information."
 >
 <link rel="icon" type="image/png" href="images/logo.png">
 <link rel="stylesheet" href="style.css">
@@ -18,12 +18,12 @@
 {
   "@context": "https://schema.org",
   "@type": "LodgingBusiness",
-  "name": "Triple T Executive Lodge",
+  "name": "Tripple T Executive Lodge",
   "url": "https://grey200404.github.io/tripple-t-Guest/",
   "telephone": "+260955753096",
-  "priceRange": "K250 - K500",
+  "priceRange": "ZMW 250 - 500",
   "image": "https://grey200404.github.io/tripple-t-Guest/images/logo.png",
-  "description": "Triple T Executive Lodge offers comfortable and affordable accommodation in Kasumbalesa, Zambia.",
+  "description": "Tripple T Executive Lodge offers comfortable and affordable accommodation in Kasumbalesa, Zambia.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Kasumbalesa",
@@ -45,19 +45,29 @@
 
         <nav>
             <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="Triple T Executive Lodge logo" class="logo">
+                <img
+                    src="images/logo.png"
+                    alt="Tripple T Executive Lodge logo"
+                    class="logo"
+                >
             </a>
 
-            <a href="index.html">Home</a>
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+                ☰
+            </button>
 
-            <a href="about.html">About</a>
-
-            <a href="rooms.html">Rooms</a>
-
-            <a href="gallery.html">Gallery</a>
-
-            <a href="contact.html">Contact</a>
-
+            <div class="nav-links" id="main-navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </nav>
 
     </header>
@@ -170,9 +180,10 @@
         <h2>Our Guest House</h2>
 
         <img
-            src="images\outside4.jpeg"
-            alt="YOUR GUEST HOUSE NAME exterior"
+            src="images/outside4.jpeg"
+            alt="Exterior of Tripple T Executive Lodge in Kasumbalesa"
             width="700"
+            loading="lazy"
         >
 
         <br><br>
@@ -262,6 +273,7 @@
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 
 </html>

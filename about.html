@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About Us | Triple T Executive Lodge Kasumbalesa</title>
+    <title>About Us | Tripple T Executive Lodge Kasumbalesa</title>
 
     <meta
         name="description"
-        content="Learn about Triple T Executive Lodge in Kasumbalesa, Zambia, offering comfortable and affordable accommodation for guests visiting the area."
+        content="Learn about Tripple T Executive Lodge in Kasumbalesa, Zambia, offering comfortable and affordable accommodation for guests visiting the area."
     >
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
@@ -20,13 +20,29 @@
     <header>
         <nav>
             <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="Triple T Executive Lodge logo" class="logo">
+                <img
+                    src="images/logo.png"
+                    alt="Tripple T Executive Lodge logo"
+                    class="logo"
+                >
             </a>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="main-navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </nav>
     </header>
 
@@ -39,7 +55,7 @@
             <h1>About Us</h1>
 
             <p>
-                Welcome to Triple T Executive Lodge, a simple and
+                Welcome to Tripple T Executive Lodge, a simple and
                 comfortable place to stay in Kasumbalesa, Zambia.
             </p>
 
@@ -99,8 +115,9 @@
             <h2>Our Guest House</h2>
 
             <img
-                src="images\outside6.jpeg"
-                alt="Triple T Executive Lodge exterior"
+                src="images/outside6.jpeg"
+                alt="Tripple T Executive Lodge exterior in Kasumbalesa"
+                loading="lazy"
                 style="width: 100%; max-width: 900px; border-radius: 10px;"
             >
 
@@ -162,7 +179,7 @@
     </div>
 </footer>
     
-
+<script src="script.js"></script>
 </body>
 
 </html>

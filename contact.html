@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact & Directions | Triple T Executive Lodge Kasumbalesa</title>
+    <title>Contact & Directions | Tripple T Executive Lodge Kasumbalesa</title>
 
     <meta
         name="description"
-        content="Contact Triple T Executive Lodge in Kasumbalesa, Zambia. Call or WhatsApp us for room rates, availability and directions to the lodge."
+        content="Contact Tripple T Executive Lodge in Kasumbalesa, Zambia. Call or WhatsApp us for room rates, availability and directions to the lodge."
     >
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
@@ -20,13 +20,29 @@
     <header>
         <nav>
             <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="Triple T Executive Lodge logo" class="logo">
+                <img
+                    src="images/logo.png"
+                    alt="Tripple T Executive Lodge logo"
+                    class="logo"
+                >
             </a>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="main-navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
         </nav>
     </header>
 
@@ -198,6 +214,7 @@
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 
 </html>
