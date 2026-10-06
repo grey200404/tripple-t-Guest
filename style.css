@@ -295,29 +295,46 @@ section img {
 ========================= */
 
 footer {
-    background-color: #30251f;
-
+    background-color: #30241f;
     color: white;
-
-    text-align: center;
-
-    padding: 30px;
-
-    margin-top: 30px;
+    padding: 50px 8% 20px;
 }
 
-.map-placeholder {
-    width: 100%;
-    min-height: 350px;
-    background-color: #e8e4df;
-    border-radius: 10px;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-content h3 {
+    color: #d39a45;
+    margin-bottom: 15px;
+}
 
+.footer-content p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #d39a45;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    color: #666;
+    font-size: 14px;
 }
 /* Gallery Image Popup */
 
@@ -546,5 +563,10 @@ footer {
     .button {
         padding: 12px 22px;
     }
+    .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+}
 
 }
